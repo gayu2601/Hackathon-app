@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.firstapp.SalaryActivity"
+    tools:showIn="@layout/activity_salary"
+    android:orientation="vertical"
+    android:id="@+id/content"
+    android:weightSum="1">
+
+    <TableRow android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BASIC PAY: "/>
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit1"
+            android:layout_weight="0.18" />
+    </TableRow>
+
+    <TableRow android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOUSE RENT ALLOWANCE: "/>
+        <EditText android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit2"
+            android:layout_weight="0.25" />
+    </TableRow>
+
+    <TableRow android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TRANSPORT ALLOWANCE: "/>
+        <EditText android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit3"
+            android:layout_weight="0.38" />
+    </TableRow>
+
+    <TableRow android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OTHER ALLOWANCES: "/>
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit4"
+            android:layout_weight="0.40" />
+    </TableRow>
+    <TableRow android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RENT PAID: "/>
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit5"
+            android:layout_weight="0.17" />
+    </TableRow>
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEDUCTIONS UNDER SECTION 80C: "/>
+    <TableRow android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INSURANCE PREMIUM PAID: "/>
+        <EditText android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit6"
+            android:layout_weight="0.23" />
+    </TableRow>
+    <TableRow android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1">
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TUITION FEES PAID: "/>
+        <EditText android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit7"
+            android:layout_weight="0.40" />
+    </TableRow>
+    <TableRow android:orientation="horizontal"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content">
+
+        <EditText android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit8" />
+
+        <TextView android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOUSING LOAN PRINCIPAL AND OTHERS: "/>
+
+    </TableRow>
+
+    <TableRow android:orientation="horizontal"
+        android:layout_width="172dp"
+        android:layout_height="wrap_content">
+
+        <EditText android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit9" />
+
+        <TextView android:layout_width="219dp"
+            android:layout_height="wrap_content"
+            android:text="DEDUCTIONS UNDER SECTION 80D: "/>
+
+        <TextView android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="MEDICAL INSURANCE PREMIUM: "/>
+    </TableRow>
+
+    <TextView android:layout_width="139dp"
+        android:layout_height="39dp"
+        android:text="DONATIONS(UNDER SECTION 80G): "
+        />
+<TableRow
+    android:orientation="horizontal"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content">
+
+    <EditText android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit10" />
+
+    <TextView android:layout_width="110dp"
+            android:layout_height="35dp"
+            android:orientation="horizontal"
+            android:text="DONATIONS TO CM/PM RELIEF FUND:"/>
+
+</TableRow>
+
+    <EditText android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit11"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:text="DONATIONS TO OTHER CHARITIES:"
+        android:layout_weight="1.03" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_send"
+        android:onClick="sendMessage"
+        android:layout_gravity="right" />
+
+    <TableRow android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TableRow>
+
+</LinearLayout>
+</ScrollView>

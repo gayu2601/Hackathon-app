@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.firstapp.CalcHouseActivity"
+    tools:showIn="@layout/activity_calc_house"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DEDUCTIONS:"/>
+    <TableRow android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <TextView android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:text="SECTION 80C(MAX. 1.5 LAKHS): "/>
+        <TextView android:layout_width="100dp"
+            android:layout_height="43dp"
+            android:id="@+id/tex13"
+            />
+    </TableRow>
+    <TableRow android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <TextView android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:text="SECTION 80D(MAX. 25000): "/>
+        <TextView android:layout_width="100dp"
+            android:layout_height="43dp"
+            android:id="@+id/tex14"
+            />
+    </TableRow>
+    <TableRow android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <TextView android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:text="SECTION 80G(FOR PM/CM FUND-100%,FOR OTHER CHARITIES-50%): "/>
+        <TextView android:layout_width="100dp"
+            android:layout_height="43dp"
+            android:id="@+id/tex15"
+            />
+    </TableRow>
+    <TableRow android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+        <TextView android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:text="TOTAL DEDUCTIONS: "/>
+        <TextView android:layout_width="100dp"
+            android:layout_height="43dp"
+            android:id="@+id/tex16"
+            />
+    </TableRow>
+    <TableRow>
+        <TextView android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:text="TOTAL TAX: "/>
+        <TextView android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:id="@+id/tex17"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:text="EDUCATION CESS AND HIGHER EDUCATION CESS: "/>
+        <TextView android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:id="@+id/tex18"/>
+    </TableRow>
+</TableLayout>
+
+</ScrollView>
